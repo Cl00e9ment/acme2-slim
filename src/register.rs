@@ -25,7 +25,9 @@ struct RegisterRequest {
 struct RegisterResult {
     #[serde(default)]
     contact: Vec<String>,
+    #[serde(default)]
     initial_ip: String,
+    #[serde(default)]
     created_at: String,
     status: String,
     #[serde(flatten)]
